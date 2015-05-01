@@ -9,6 +9,7 @@
 #include <string>
 #include <iostream>
 
+#include <signalTest/signalTest1.hpp>
 #include <boost/lexical_cast.hpp>
 
 using namespace std;
@@ -59,7 +60,7 @@ int main(int argc, char** argv) {
 
 			case 1:
 
-				// myfunc
+				signalTest1();
 				break;
 
 			case 0:
@@ -85,7 +86,7 @@ int main(int argc, char** argv) {
 	catch (std::exception & e) {									// exception management
 
 		std::cout
-			<< "an error occured: "
+			<< "an error occurred: "
 			<< e.what()
 			<< std::endl;
 
@@ -95,7 +96,7 @@ int main(int argc, char** argv) {
 	catch (...) {													// unknown error
 
 		std::cout
-			<< "an unknown error occured..."
+			<< "an unknown error occurred..."
 			<< std::endl;
 
 		exit = 1; system("pause");

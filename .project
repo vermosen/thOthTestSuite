@@ -3,6 +3,7 @@
 	<name>thOthTestSuite</name>
 	<comment></comment>
 	<projects>
+		<project>thOth</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
